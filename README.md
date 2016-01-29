@@ -176,7 +176,7 @@ Readable流可以产出数据，你可以将这些数据传送到一个writable�
 	});
 	process.stdout.on('error', process.exit);
 	
-运行上面的代码我们可以发现如果我们只请求5比特的数据，那么`_read`只会运行5次：
+运行上面的代码我们可以发现如果我们只请求5字节的数据，那么`_read`只会运行5次：
 
 	$ node read2.js | head -c5
 	abcde
